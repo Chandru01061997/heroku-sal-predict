@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>CSR</title>
+    </head>
+
+    <body>
+        <h1>Welcome to my First Flask page</h1>
+        <form action = 'predict' method = "POST">
+            <input type = 'number' name = 'experience' placeholder = 'experience' required = 'required' />
+            <input type = 'number' name = 'test_score' placeholder = 'test_score' required = 'required' />
+            <input type = 'number' name = 'interview_score' placeholder = 'interview_score' required = 'required' />
+
+            <button type = 'submit'>Predict</button>
+        </form>
+        {{prediction_text}}
+    </body>
+</html>
